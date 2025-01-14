@@ -1,0 +1,24 @@
+@use 'hero.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px){
+        max-width: 80%;
+    }
+    
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}
