@@ -1,0 +1,47 @@
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__infos{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            font-size: 14px;
+            color: #000;
+
+            b{
+                font-size: 18px;
+                display: flex;
+                color: #000;
+                flex-direction: column;
+            }
+        }
+    }
+    @media (max-width: 640px){
+        display: flex;
+    
+        &__infos{
+            display: flex;
+            flex-direction: column;
+    
+    
+            &__item{
+                margin-bottom: 24px;
+                flex-direction: column;
+            }
+        }
+    }
+
+
+    @media (max-width: 1024px){
+        &__infos{
+            gap: 16px;
+        }
+    }
+
+   
+}
+

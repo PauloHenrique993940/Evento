@@ -1,11 +1,13 @@
 @use 'hero.scss';
+@use './components/infos-bar' as*;
+@use './components/buttons' as*;
 
 *{
     padding: 0;
     margin: 0;
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
-    color: #fff;
+    list-style-type: none;
     
 }
 
