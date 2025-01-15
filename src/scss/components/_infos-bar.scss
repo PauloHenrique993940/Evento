@@ -1,8 +1,11 @@
+
+
 .infos-bar{
     padding: 16px 24px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     &__infos{
         display: flex;
@@ -15,7 +18,7 @@
             b{
                 font-size: 18px;
                 display: flex;
-                color: #000;
+                color:#000;
                 flex-direction: column;
             }
         }

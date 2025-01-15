@@ -2,35 +2,98 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Pagina de evento</title>
+    <title>Página de Evento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/scss/main.scss">
+    <!-- CSS do AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" data-aos="fade-down">
         <div class="container">
-            <img src="./images/ebac_logo.svg" alt="Logo da ebac_logo" class="hero__logo">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em 30d  17h 20min 56s</p>
-            <div class="infos-bar">
+            <img src="./images/ebac_logo.svg" alt="Logo da ebac_logo" class="hero__logo" data-aos="zoom-in" data-aos-delay="200">
+            <p class="hero__text" data-aos="fade-up" data-aos-delay="400">
+                O maior evento de tecnologia do Brasil começa em 30d  17h 20min 56s
+            </p>
+            <div class="infos-bar" data-aos="fade-up" data-aos-delay="600">
                 <ul class="infos-bar__infos">
-                    <li class="infos-bar_infos__item">
+                    <li class="infos-bar_infos__item" data-aos="fade-right" data-aos-delay="800">
                         <b>Localização</b><br>
                         Allianz Parque - Barra Funda - São Paulo
                     </li>
-                    <li class="infos-bar_infos__item">
+                    <li class="infos-bar_infos__item" data-aos="fade-right" data-aos-delay="1000">
                         <b>Preço</b><br>
                         A partir de R$ 120,00
                     </li>
-                    <li class="infos-bar_infos__item">
+                    <li class="infos-bar_infos__item" data-aos="fade-right" data-aos-delay="1200">
                         <b>Quando</b><br>
-                        12/12/2025 ás 19hrs
+                        12/12/2025 às 19hrs
                     </li>
                 </ul>
-                <a href="#" class="button button--primary">Garanta sua vaga</a>
+                <a href="#" class="button button--primary" data-aos="fade-up" data-aos-delay="1400">Garanta sua vaga</a>
             </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title" data-aos="fade-up">Front-End</h2>
+                <p class="event__details__description" data-aos="fade-up" data-aos-delay="200">
+                    Um desenvolvedor front-end é responsável por criar e implementar interfaces visuais para aplicações e sites, garantindo uma experiência de usuário intuitiva, interativa e responsiva. Suas principais responsabilidades incluem:
+                    Criação de Layouts: Desenvolver páginas web a partir de designs fornecidos por equipes de design, utilizando HTML, CSS e JavaScript.
+                    Responsividade e Acessibilidade: Garantir que o site seja acessível e responsivo em diferentes dispositivos e navegadores.
+                    Interatividade: Implementar interações dinâmicas e componentes interativos, como formulários, animações e menus, utilizando frameworks e bibliotecas como React, Vue.js ou Angular.
+                    Otimização de Performance: Trabalhar na otimização de carregamento e navegação para oferecer uma experiência rápida e fluida ao usuário.
+                    Integração com Back-End: Colaborar com desenvolvedores back-end para consumir APIs e integrar dados dinâmicos ao front-end.
+                    Manutenção e Evolução: Corrigir bugs e implementar melhorias contínuas em projetos já existentes.
 
+                </p>
+            </div>
+            <img src="./images/frontend.png" alt="Imagem de um desenvolvedor Front-End" class="event__image" data-aos="zoom-in">
+        </div>
+    </section>
+    <section class="event event--ux-ui">
+        <div class="container ux-ui" data-aos="fade-left">
+            <div class="event__details ux">
+                <h2 class="event__details__title" data-aos="fade-up">UI/UX</h2>
+                <p class="event__details__description" data-aos="fade-up" data-aos-delay="200">
+                    O UI Designer (Designer de Interfaces de Usuário) é responsável por criar a aparência e o estilo visual de interfaces digitais, garantindo que sejam atraentes, intuitivas e consistentes com a identidade da marca.
+                    Principais Responsabilidades:
+                    Design de Interfaces: Criar layouts, botões, ícones e outros elementos visuais para aplicativos, sites e sistemas.
+                    Consistência Visual: Definir e manter guias de estilo, garantindo uniformidade em toda a aplicação.
+                    Prototipagem: Desenvolver protótipos interativos usando ferramentas como Figma, Adobe XD ou Sketch, para validar ideias de design antes da implementação.
+                    Colaboração com Equipes: Trabalhar em conjunto com desenvolvedores, UX designers e stakeholders para garantir que as soluções visuais atendam às necessidades do usuário.
+                    Acessibilidade e Usabilidade: Garantir que as interfaces sejam acessíveis e fáceis de usar para diferentes públicos e dispositivos.
+                </p>
+            </div>
+            <img src="./images/ui-ux.png" alt="Imagem de um desenvolvedor UI/UX" class="event__image" data-aos="zoom-in">
+        </div>
+    </section>
+    <section class="event event--backend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title" data-aos="fade-up">Back-End</h2>
+                <p class="event__details__description" data-aos="fade-up" data-aos-delay="200">
+                    O Desenvolvedor Back-End é responsável por criar e gerenciar a lógica, banco de dados e servidores que sustentam a funcionalidade de
+                    aplicações e sites. Ele trabalha nos bastidores para garantir o desempenho,
+                    a segurança e a escalabilidade dos sistemas.
+                </p>
+            </div>
+            <img src="./images/backend.png" alt="Imagem de um desenvolvedor Back-End" class="event__image" data-aos="zoom-in">
+        </div>
+    </section>
 
-    <scrip type="module" src="./js/main.js"></scrip>
+    <!-- Script do AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Inicializa o AOS
+        AOS.init({
+            
+        });
+    </script>
+    <!-- Script principal -->
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

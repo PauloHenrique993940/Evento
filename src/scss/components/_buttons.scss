@@ -1,3 +1,4 @@
+
 .button{
 
     padding: 12px;
@@ -6,6 +7,8 @@
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
+    align-items: center;
+    display: flex;
 
     &--primary{
         color: #fff;

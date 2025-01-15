@@ -1,6 +1,8 @@
 @use 'hero.scss';
-@use './components/infos-bar' as*;
-@use './components/buttons' as*;
+@use './components/infos-bar' ;
+@use './components/buttons';
+@use 'event';
+
 
 *{
     padding: 0;
