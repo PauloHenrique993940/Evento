@@ -4,7 +4,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel src/index.html src/scss/main.scss src/js/main.js",
-    "build": "parcel build",
+    "build": "parcel build src/index.html ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "svgo": "^3.3.2"
   }
 }
